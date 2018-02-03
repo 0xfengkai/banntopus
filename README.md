@@ -3,8 +3,8 @@ Multiprocessing banner grabber
 
 ## Usage
 
-python banntops.py
 ```
+root@host# python banntops.py
 usage: banntops.py [-h] -i INPUT [-w WORKER] [-p [PORT]] [-m MATCH]
                    [-o OUTPUT] [-x TIMEOUT] [--web] [--ssl]
 
