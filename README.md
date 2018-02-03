@@ -1,8 +1,12 @@
 # banntopus
 Multiprocessing banner grabber
 
-## Usage
+## Description
+The tool is design to grab a huge set of host banner in parallel, using python multiprocessing module.
+Added in a match string switch to only display host banner user is interested in.
+Tested to work in windows, Kali Linux and MacOS.
 
+## Usage
 ```
 root@host# python banntops.py
 usage: banntops.py [-h] -i INPUT [-w WORKER] [-p [PORT]] [-m MATCH]
@@ -29,3 +33,20 @@ optional arguments:
   -x TIMEOUT, --timeout TIMEOUT
                         set timeout; default: 10 sec
 ```
+
+## Usage Example
+```
+
+```
+
+## Sample Output
+```
+
+```
+
+## To-do
+[-] Integration of lightweight subnet port scanning utility
+[-] Use regex for match switch
+
+## Author
+Feng Kai
