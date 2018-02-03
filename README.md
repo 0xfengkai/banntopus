@@ -3,7 +3,8 @@ Multiprocessing banner grabber
 
 ## Usage
 
-python banntops.py 
+python banntops.py
+```
 usage: banntops.py [-h] -i INPUT [-w WORKER] [-p [PORT]] [-m MATCH]
                    [-o OUTPUT] [-x TIMEOUT] [--web] [--ssl]
 
@@ -27,3 +28,4 @@ optional arguments:
                         write output to file
   -x TIMEOUT, --timeout TIMEOUT
                         set timeout; default: 10 sec
+```
