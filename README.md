@@ -2,8 +2,8 @@
 Multiprocessing banner grabber
 
 ## Description
-The tool is design to grab a huge set of host banner in parallel, using python multiprocessing module.
-Added in a match string switch to only display host banner user is interested in.
+The tool is design to grab a huge set of host banner in parallel, using python multiprocessing module. Added in a match string switch to only display host banner user is interested in.
+
 Tested to work in windows, Kali Linux and MacOS.
 
 ## Usage
