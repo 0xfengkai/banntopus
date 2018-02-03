@@ -45,8 +45,8 @@ optional arguments:
 ```
 
 ## To-do
-[-] Integration of lightweight subnet port scanning utility
-[-] Use regex for match switch
+* Integration of lightweight subnet port scanning utility
+* Use regex for match switch
 
 ## Author
 Feng Kai
