@@ -21,7 +21,7 @@ optional arguments:
   -w WORKER, --worker WORKER
                         workers to run; default workers: 4
   -p [PORT], --port [PORT]
-                        port to grab banner
+                        port to grab banner if not specified in input file
   -m MATCH, --match MATCH
                         print ONLY when response contain string
   -o OUTPUT, --output OUTPUT

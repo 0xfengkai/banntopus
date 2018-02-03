@@ -141,7 +141,7 @@ def main(argv):
 	required.add_argument("-i", "--input", help="read input host file; Format: <IP>:<PORT>", default="hosts", required=True)
 
 	optional.add_argument("-w", "--worker", help="workers to run; default workers: 4", default=4, type=int)
-	optional.add_argument("-p", "--port", help="port to grab banner", nargs="?", const=0, type=int)
+	optional.add_argument("-p", "--port", help="port to grab banner if not specified in input file", nargs="?", const=0, type=int)
 	optional.add_argument("-m", "--match", help="print ONLY when response contain string", default=False)
 	optional.add_argument("-o", "--output", help="write output to file", default=False)
 	optional.add_argument("-x", "--timeout", help="set timeout; default: 10 sec", default=10, type=int)
