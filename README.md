@@ -1,4 +1,4 @@
 # banntopus
-"Multi-threaded" banner grabber
+Multiprocessing banner grabber
 
 ## usage

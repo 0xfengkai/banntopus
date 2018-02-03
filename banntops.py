@@ -2,7 +2,7 @@
 
 """
 Description:
-Hackish fast multi-threaded banner grabbing script for huge set of IPs
+Hackish fast multiprocessing banner grabbing script for huge set of IPs
 
 To-do:
 [*] Integrating subnet scanner for TCP open port
@@ -140,7 +140,7 @@ def main(argv):
 
 	required.add_argument("-i", "--input", help="read input host file; Format: <IP>:<PORT>", default="hosts", required=True)
 
-	optional.add_argument("-t", "--thread", help="threads to run; default workers: 4", default=4, type=int)
+	optional.add_argument("-w", "--worker", help="workers to run; default workers: 4", default=4, type=int)
 	optional.add_argument("-p", "--port", help="port to grab banner", nargs="?", const=0, type=int)
 	optional.add_argument("-m", "--match", help="print ONLY when response contain string", default=False)
 	optional.add_argument("-o", "--output", help="write output to file", default=False)
@@ -156,7 +156,7 @@ def main(argv):
 		output_filename = args.output
 		input_filename = args.input
 		port = args.port 
-		threads = args.thread
+		workers = args.worker
 		match_string = args.match
 		timeout = args.timeout
 		web = args.web
@@ -164,7 +164,7 @@ def main(argv):
 
 		data = file_reader(input_filename)
 		hosts = urls_parser(data, port, ssl) if web else hosts_parser(data, port)
-		consolidator(threads, hosts, timeout, match_string, output_filename)
+		consolidator(workers, hosts, timeout, match_string, output_filename)
 	except:
 		pass
 
