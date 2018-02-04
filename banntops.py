@@ -69,7 +69,7 @@ def host_grabber(host, timeout):
 	except Exception as e:
 		response = str(e)
 	sock.close()
-	return response
+	return response.strip()
 
 def file_reader(filename):
 	data = []
@@ -163,7 +163,7 @@ def main(argv):
 		ssl = args.ssl
 
 		data = file_reader(input_filename)
-		hosts = urls_parser(data, port, ssl) if web else hosts_parser(data, port)
+		hosts = urls_parser(data, port, ssl) if (web or ssl) else hosts_parser(data, port)
 		consolidator(workers, hosts, timeout, match_string, output_filename)
 	except:
 		pass
