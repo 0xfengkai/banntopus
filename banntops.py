@@ -96,7 +96,7 @@ def multiplexer(timeout, match_string, host):
 			response = url_grabber(host, timeout)
 		else:
 			response = host_grabber(host, timeout)
-		if not match_string or match_string in response:
+		if not match_string or str.lower(match_string) in str.lower(response):
 			return message_formatter("host: %s\tbanner: %s" % (host, response), 2)
 	except Exception as e:
 		return message_formatter("host: %s\terror: %s" % (host, str(e)), 0)

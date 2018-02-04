@@ -4,7 +4,7 @@ Multiprocessing banner grabber
 ## Description
 The tool is design to grab a huge set of host banner in parallel, using python multiprocessing module. Added in a match string switch to only display host banner user is interested in.
 
-Tested to work in windows, Kali Linux and MacOS.
+Tested to work in Windows, Kali Linux and MacOS.
 
 ## Usage
 ```
@@ -80,6 +80,14 @@ root@host# python banntops.py -i iplist -p 443 -w 30 --ssl
 [-] host: https://192.168.0.234:443/	banner: Apache/2.2.29
 [-] host: https://192.168.0.203:443/	banner: timeout
 [*] run complete
+
+root@host# python banntops.py -i iplist -p 22 -w 30 -m rosssh
+[*] host loaded: 200
+[*] starting
+[-] host: ('192.168.0.74', 22)	banner: SSH-2.0-ROSSSH
+[-] host: ('192.168.0.82', 22)	banner: SSH-2.0-ROSSSH
+[-] host: ('192.168.0.90', 22)	banner: SSH-2.0-ROSSSH
+[*] run comple
 ```
 
 ## To-do
