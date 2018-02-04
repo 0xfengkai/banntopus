@@ -87,7 +87,7 @@ root@host# python banntops.py -i iplist -p 22 -w 30 -m rosssh
 [-] host: ('192.168.0.74', 22)	banner: SSH-2.0-ROSSSH
 [-] host: ('192.168.0.82', 22)	banner: SSH-2.0-ROSSSH
 [-] host: ('192.168.0.90', 22)	banner: SSH-2.0-ROSSSH
-[*] run comple
+[*] run complete
 ```
 
 ## To-do

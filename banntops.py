@@ -4,9 +4,6 @@
 Description:
 Hackish fast multiprocessing banner grabbing script for huge set of IPs
 
-To-do:
-[*] Integrating subnet scanner for TCP open port
-
 author:		fengkai
 version: 	1.0.0
 tested:		python 2.7.10
